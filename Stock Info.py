@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 import logging
 import datetime
 
-Token = "6960119409:AAGB6q3jMZNfpohyG4GQpxRuf4xQpv7orTc"  # Replace with your actual token
-NewsApiKey = "82a9c9d22a1c404485906e480e7bb7b4"  # Replace with your actual News API key
+Token = "you're_telegram_api_key"  # Replace with your actual token
+NewsApiKey = "you're_news_api_key"  # Replace with your actual News API key
 bot = telebot.TeleBot(Token)
 
 # Configure basic logging
@@ -38,7 +38,7 @@ def google_search(stock_name):
         return None, None
 
 def fetch_stock_news(stock_symbol):
-    base_url = 'https://newsapi.org/v2/everything'
+    base_url = 'enter_news_api_searching'
     params = {
         'apiKey': NewsApiKey,
         'q': stock_symbol,
